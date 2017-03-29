@@ -1,0 +1,19 @@
+{
+  "name": "3dhubs_hangman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "lodash": "^4.17.4",
+    "mocha": "^3.2.0",
+    "node-uuid": "^1.4.8",
+    "socket.io-client": "^1.7.3",
+    "ws": "^2.2.2"
+  }
+}
