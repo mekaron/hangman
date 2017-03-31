@@ -1,0 +1,28 @@
+/*Font styling*/
+h1, h2, h3 {
+  font-family: 'Oswald';
+  font-weight: 700;
+}
+p, a, button, td, th, input {
+  font-family: 'Open Sans'
+}
+
+/*Layout margins*/
+.mt10 {
+  margin-top: 10px;
+}
+.mt50 {
+  margin-top: 50px;
+}
+.container {
+  max-width: 500px;
+}
+
+/*Animations*/
+.animated {
+  transition: color 0.5s;
+
+}
+.guess-success{
+  color: #a5dc86;
+}

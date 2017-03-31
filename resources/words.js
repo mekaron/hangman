@@ -1,6 +1,8 @@
 module.exports = [
-  'worddsasds',
-  'worddafaaa',
-  'wogfaggagg',
-  'wordjssfka',
-]
+  '3dhubs',
+  'marvin',
+  'print',
+  'filament',
+  'order',
+  'layer',
+];

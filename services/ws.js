@@ -1,16 +1,14 @@
 const WebSocket = require('ws');
-
 const hangmanService = require('../services/hangman');
 
 module.exports = () => {
   const wss = new WebSocket.Server({
     perMessageDeflate: false,
-    port: 8080
+    port: 8080,
   });
 
-  wss.on('connection', function connection(ws) {
-    console.log('CONNECTION');
-    ws.on('message', function incoming(message) {
+  wss.on('connection', (ws) => {
+    ws.on('message', (message) => {
       console.log(message);
       let wsMessage = false;
       try {
@@ -18,12 +16,15 @@ module.exports = () => {
       } catch (e) {
         // log and fail.
         console.log(e);
-        console.log('Message parsing failed: ' + message);
+        console.log(`Message parsing failed: ${message}`);
       }
       if (!wsMessage) {
         return ws.send('json fail');
       }
       switch (wsMessage.type) {
+        case 'GET_STATE':
+          hangmanService.getState(wsMessage.id, ws);
+          break;
         case 'INIT':
           hangmanService.initGame(ws);
           break;
@@ -37,6 +38,5 @@ module.exports = () => {
           break;
       }
     });
-    // ws.send('peek-a-boo');
   });
-}
+};
