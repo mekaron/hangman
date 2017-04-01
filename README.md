@@ -12,26 +12,24 @@ Guess the word! Try one letter or number at a time, don't make more then 4 mista
 * ESLint linting
 * jQuery + Bootstrap frontend
 
-
 ```
-app.js 				> Entry point for the server
-storage.js 			> Storage for games
+app.js            > Entry point for the server
+storage.js        > Storage for games
   -> lib/
-      -> hangman	> Pure functions regarding Hangman logic
+      -> hangman  > Pure functions regarding Hangman logic
   -> resources/
-      -> words		> Words used in game
+      -> words    > Words used in game
   -> services/
       -> client		> Sending websocket messages to client
-      -> ws			> Receiving websocket messages from client
-      -> hangman	> Game logic
+      -> ws			  > Receiving websocket messages from client
+      -> hangman  > Game logic
 ```
-
 
 ## Install
 
 git clone this repo
 ```
-git clone ssh://
+git clone git@github.com:mekaron/hangman.git
 ```
 NPM Install
 ```
