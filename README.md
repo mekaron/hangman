@@ -21,7 +21,7 @@ storage.js        > Storage for games
       -> words    > Words used in game
   -> services/
       -> client	  > Sending websocket messages to client
-      -> ws     > Receiving websocket messages from client
+      -> ws       > Receiving websocket messages from client
       -> hangman  > Game logic
 ```
 
