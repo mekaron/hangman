@@ -15,6 +15,7 @@ Guess the word! Try one letter or number at a time, don't make more then 4 mista
 ```
 app.js            > Entry point for the server
 storage.js        > Storage for games
+  -> public/      > Client HTML/ CSS/ JS
   -> lib/
       -> hangman  > Pure functions regarding Hangman logic
   -> resources/
