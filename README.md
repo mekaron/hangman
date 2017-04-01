@@ -20,8 +20,8 @@ storage.js        > Storage for games
   -> resources/
       -> words    > Words used in game
   -> services/
-      -> client	> Sending websocket messages to client
-      -> ws   > Receiving websocket messages from client
+      -> client	  > Sending websocket messages to client
+      -> ws     > Receiving websocket messages from client
       -> hangman  > Game logic
 ```
 
